@@ -1,5 +1,7 @@
 .c-dashboardInfo {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+    
+  
   }
   .c-dashboardInfo .wrap {
     background: #ffffff;
@@ -61,4 +63,17 @@
     user-select: none;
     flex-shrink: 0;
   }
+
   
+  /* **************** */
+  #cardsbox{
+    
+    /* background-color: blue; */
+    width: 100%;
+    height: max-content;
+  }
+  .boxleft{
+    background-color: red;
+    width: 40%;
+    height: 200px;
+  }
