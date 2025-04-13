@@ -18,6 +18,7 @@ const SmallSalesChartCard = () => {
     <div className="sales-chart-card-container" id="sales-chart-card-wrapper">
       <div className="sales-chart-card-header">
         <h3 className="sales-chart-amount">200K</h3>
+        <hr />
         <p className="sales-chart-subtitle">Today Sales</p>
       </div>
       <ResponsiveContainer width="100%" height={480}>

@@ -36,9 +36,8 @@ export function Cards() {
           <CardsBox />
           <CardsBox />
           <CardsBox />
-        
-
-
+       
+    
         </div>
       </div>
     </div>
@@ -51,23 +50,29 @@ export default function Dashboard() {
     <div className="eduler-layout">
       <main className="eduler-main">
         <div className="eduler-main__container">
+          {/* lkejdl */}
+          <div className='fx'>
+          <h4><b>Dashboard /</b></h4><h4><p className='mx-3'>Home</p></h4>
+          </div>
           {/* ***************** */}
           <div className='fx'>
-              <div>
-              <Cards />
+            <div>
+              {/* <Cards /> */}
               <SmallSalesChartCard />
-             
-              </div>
+              <Cards />
+              <ContactSourceCard />
+            </div>
             <div className='boxleft '>
-                  <CradSlide />
+              <br/>
+              <CradSlide />
+              <br />
+              <ProjectBalanceCard />
+              <TransactionListCard />
             </div>
           </div>
           {/* ****************  */}
-          <ProjectBalanceCard />
-        <div className='cardbott' >
-        <ContactSourceCard />
-        <TransactionListCard />
-        </div>
+
+         
         </div>
       </main>
     </div>
