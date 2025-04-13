@@ -18,8 +18,8 @@
 }
 
 .eduler-main__container {
-  max-width: 2500px;
-  /* max-width: max-content; */
+  /* max-width: 2500px; */
+  max-width: max-content;
   /* max-height: ; */
   margin: 0 auto;
   background: #fff;

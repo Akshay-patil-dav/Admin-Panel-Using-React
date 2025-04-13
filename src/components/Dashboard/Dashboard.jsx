@@ -1,6 +1,10 @@
 import React from 'react'
 import { Card } from 'react-bootstrap';
 import CradSlide from './components/RecentActivityCard';
+import SmallSalesChartCard from './components/SmallSalesChartCard ';
+import ProjectBalanceCard from './components/ProjectBalanceCard ';
+import ContactSourceCard from './components/ContactSourceCard ';
+import TransactionListCard from './components/TransactionListCard';
 
 
 export function CardsBox() {
@@ -49,12 +53,19 @@ export default function Dashboard() {
         <div className="eduler-main__container">
           {/* ***************** */}
           <div className='fx'>
-            <Cards />
-            <div className='boxleft mx-3'>
+              <div>
+              <Cards />
+              <SmallSalesChartCard />
+             
+              </div>
+            <div className='boxleft '>
                   <CradSlide />
             </div>
           </div>
           {/* ****************  */}
+          <ProjectBalanceCard />
+          <ContactSourceCard />
+          <TransactionListCard />
         </div>
       </main>
     </div>

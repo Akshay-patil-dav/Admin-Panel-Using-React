@@ -1,0 +1,93 @@
+#project-balance-wrapper.project-balance-card-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 16px;
+    /* box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06); */
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    position: relative;
+    bottom: 500px;
+    /* right: 50px; */
+    left: 530px;
+    /* border: 1px solid #e5e7eb; */
+    
+  }
+  
+  .project-balance-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #111827;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  
+  .project-balance-arc {
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  .project-balance-status .status-pill {
+    display: inline-block;
+    background-color: #d1fae5;
+    color: #059669;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.3rem 0.6rem;
+    border-radius: 999px;
+  }
+  
+  .project-balance-info {
+    margin-top: 1rem;
+  }
+  
+  .info-label {
+    font-size: 0.8rem;
+    color: #6b7280;
+    letter-spacing: 1px;
+  }
+  
+  .info-value {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #111827;
+    margin-top: 0.2rem;
+  }
+  
+  .project-balance-footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+    font-size: 0.85rem;
+    color: #6b7280;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 1rem;
+  }
+  
+  .footer-section strong {
+    display: block;
+    font-size: 1rem;
+    color: #111827;
+  }
+  
+  .green-text {
+    color: #10b981;
+  }
+  
+  /* Responsive */
+  @media (max-width: 480px) {
+    .project-balance-card-container {
+      padding: 1rem;
+    }
+  
+    .info-value {
+      font-size: 1.4rem;
+    }
+  
+    .project-balance-footer {
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+  }
+  

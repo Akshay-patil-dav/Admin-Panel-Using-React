@@ -2,7 +2,7 @@ import React from 'react';
 
 const activities = [
   { time: '32 min', color: '#27ae60', text: 'Quia quae rerum', bold: 'explicabo officiis', rest: 'beatae' },
-  { time: '56 min', color: '#c0392b', text: 'Voluptatem blanditiis', bold: 'blanditiis', rest: 'eveniet' },
+  // { time: '56 min', color: '#c0392b', text: 'Voluptatem blanditiis', bold: 'blanditiis', rest: 'eveniet' },
   { time: '2 hrs', color: '#2980b9', text: 'Voluptates corrupti', bold: 'molestias', rest: 'voluptatem' },
   { time: '1 day', color: '#16a085', text: 'Tempore autem saepe', bold: 'occaecati voluptatem', rest: 'tempore' },
   { time: '2 days', color: '#f39c12', text: 'Est sit eum', bold: 'reiciendis', rest: 'exercitationem' },

@@ -1,4 +1,10 @@
 @import url("./DasboardStyle.css");
+@import url("./component/SmallSalesChartCard.css");
+@import url("./component/ProjectBalanceCard.css");
+@import url("./component/ContactSourceCard.css");
+@import url("./component/TransactionListCard.css");
+
+
 .c-dashboardInfo {
     margin-bottom: 30px;
     
@@ -17,10 +23,10 @@
     cursor: pointer;
   }
 
-  .c-dashboardInfo .wrap:hover {
+  /* .c-dashboardInfo .wrap:hover {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     transition: all 0.3s ease-in-out;
-  }
+  } */
 
 
   .c-dashboardInfo__title,
@@ -84,8 +90,10 @@
   }
   .boxleft{
     /* background-color: red; */
-    width: 50%;
+    /* width: 50%; */
+    width: 500px;
     height: min-content;
     position: relative;
-    left: 40px;
+    left: 20px;
+    bottom: 18px;
   }

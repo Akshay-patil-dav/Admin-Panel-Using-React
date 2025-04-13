@@ -1,0 +1,73 @@
+#contact-source-card.cs-card-container {
+    background-color: #ffffff;
+    padding: 3em;
+    border-radius: 16px;
+    /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* max-width: 600px; */
+    width: 40%;
+    
+    margin: auto;
+    position: absolute;
+    border: 2px solid #e5e7eb;
+    top: 1020px;
+  }
+  
+  .cs-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.25rem;
+  }
+  
+  .cs-subtitle {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+  }
+  
+  .cs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .cs-grid-item {
+    text-align: center;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 1rem;
+  }
+  
+  .cs-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    margin-right: 0.4rem;
+    vertical-align: middle;
+  }
+  
+  .cs-label {
+    font-size: 0.9rem;
+    color: #374151;
+  }
+  
+  .cs-value {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    color: #111827;
+  }
+  
+  /* Responsive */
+  @media (max-width: 500px) {
+    .cs-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+  
+    #contact-source-card.cs-card-container {
+      padding: 1rem;
+    }
+  }
+  

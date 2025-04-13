@@ -1,0 +1,106 @@
+#transaction-list-card.tl-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 16px;
+    /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); */
+    font-family: 'Segoe UI', sans-serif;
+    border: 2px solid #e5e7eb;
+    /* max-width: 700px; */
+    width: 39%;
+    height: 40%;
+    margin: auto;
+    position: absolute;
+    top: 1020px;
+    left: 1100px;
+    overflow-y: scroll;
+  }
+  
+  .tl-header {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .tl-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .tl-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e5e7eb;
+    gap: 1rem;
+  }
+  
+  .tl-avatar {
+    width: 40px;
+    height: 40px;
+    background: #e5e7eb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: #374151;
+    overflow: hidden;
+  }
+  
+  .tl-avatar img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .tl-info {
+    flex: 1;
+  }
+  
+  .tl-name {
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+  
+  .tl-desc {
+    font-size: 0.85rem;
+    color: #6b7280;
+  }
+  
+  .tl-meta {
+    text-align: right;
+  }
+  
+  .tl-status {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.25rem 0.6rem;
+    border-radius: 12px;
+    margin-bottom: 0.25rem;
+  }
+  
+  .tl-amount {
+    font-weight: 600;
+    color: #111827;
+    font-size: 0.9rem;
+  }
+  
+  .tl-date {
+    font-size: 0.75rem;
+    color: #6b7280;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .tl-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .tl-meta {
+      text-align: left;
+      margin-top: 0.5rem;
+    }
+  }
+  
