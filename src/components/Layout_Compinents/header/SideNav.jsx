@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
     LayoutDashboard,
     BookOpen,
@@ -33,9 +34,9 @@ const SideNav = ({ isOpen }) => {
             icon: LayoutDashboard,
             label: 'Dashboard',
             subItems: [
-                { id: 'notes', label: 'Notes', icon: FileText },
-                { id: 'lectures', label: 'Lectures', icon: Video },
-                { id: 'discussions', label: 'Discussions', icon: MessageSquare },
+                { id: 'Home', label: 'Home', icon: FileText, link: '/' },
+                { id: 'CRM', label: 'CRM', icon: Video, link: '/CRM' },
+                // { id: 'discussions', label: 'Discussions', icon: MessageSquare, link: '/dashboard/discussions' },
             ]
         },
         {
@@ -43,29 +44,29 @@ const SideNav = ({ isOpen }) => {
             icon: BookOpen,
             label: 'Documents',
             subItems: [
-                { id: 'notes', label: 'Notes', icon: FileText },
-                { id: 'lectures', label: 'Lectures', icon: Video },
-                { id: 'discussions', label: 'Discussions', icon: MessageSquare },
+                { id: 'notes', label: 'Notes', icon: FileText, link: '/documents/notes' },
+                { id: 'lectures', label: 'Lectures', icon: Video, link: '/documents/lectures' },
+                { id: 'discussions', label: 'Discussions', icon: MessageSquare, link: '/documents/discussions' },
             ]
         },
-        { id: 'ai-writer', icon: PenTool, label: 'AI Writer' },
+        { id: 'ai-writer', icon: PenTool, label: 'AI Writer', link: '/ai-writer' },
         {
             id: 'ai-teachers',
             icon: Users2,
             label: 'AI Teachers',
             subItems: [
-                { id: 'math', label: 'Mathematics', icon: Users2 },
-                { id: 'science', label: 'Science', icon: Users2 },
-                { id: 'language', label: 'Language', icon: Users2 },
+                { id: 'math', label: 'Mathematics', icon: Users2, link: '/ai-teachers/math' },
+                { id: 'science', label: 'Science', icon: Users2, link: '/ai-teachers/science' },
+                { id: 'language', label: 'Language', icon: Users2, link: '/ai-teachers/language' },
             ]
         },
-        { id: 'analytics', icon: BarChart, label: 'Analytics' },
-        { id: 'courses', icon: GraduationCap, label: 'Courses' },
-        { id: 'events', icon: Calendar, label: 'Events' },
+        { id: 'analytics', icon: BarChart, label: 'Analytics', link: '/analytics' },
+        { id: 'courses', icon: GraduationCap, label: 'Courses', link: '/courses' },
+        { id: 'events', icon: Calendar, label: 'Events', link: '/events' },
     ];
 
     const voiceTools = [
-        { id: 'speech-to-text', icon: Mic, label: 'Speech to Text' },
+        { id: 'speech-to-text', icon: Mic, label: 'Speech to Text', link: '/voice-tools/speech-to-text' },
     ];
 
     return (
@@ -93,19 +94,19 @@ const SideNav = ({ isOpen }) => {
                                 {item.subItems && (
                                     <div
                                         className={`eduler-side-nav__subitems ${expandedItems.includes(item.id)
-                                                ? 'eduler-side-nav__subitems--expanded'
-                                                : ''
+                                            ? 'eduler-side-nav__subitems--expanded'
+                                            : ''
                                             }`}
                                     >
                                         {item.subItems.map((subItem) => (
-                                            <a
+                                            <Link
                                                 key={subItem.id}
-                                                href={`#${item.id}-${subItem.id}`}
+                                                to={subItem.link}
                                                 className="eduler-side-nav__subitem"
                                             >
                                                 <subItem.icon className="eduler-side-nav__subitem-icon" />
                                                 {subItem.label}
-                                            </a>
+                                            </Link>
                                         ))}
                                     </div>
                                 )}
@@ -119,28 +120,28 @@ const SideNav = ({ isOpen }) => {
                         </h3>
                         <nav className="eduler-side-nav__menu">
                             {voiceTools.map((item) => (
-                                <a
+                                <Link
                                     key={item.id}
-                                    href={`#${item.id}`}
+                                    to={item.link}
                                     className="eduler-side-nav__item"
                                 >
                                     <item.icon className="eduler-side-nav__item-icon" />
                                     <span className="eduler-side-nav__item-content">{item.label}</span>
                                     <ChevronRight className="eduler-side-nav__item-arrow" />
-                                </a>
+                                </Link>
                             ))}
                         </nav>
                     </div>
                 </div>
 
                 <div className="eduler-side-nav__footer">
-                    <a
-                        href="#help"
+                    <Link
+                        to="/help"
                         className="eduler-side-nav__help"
                     >
                         <HelpCircle className="eduler-side-nav__help-icon" />
                         Help & Support
-                    </a>
+                    </Link>
                 </div>
             </div>
         </aside>

@@ -1,3 +1,8 @@
 .fx{
     display: flex;
 }
+
+Link , a{
+    text-decoration: none;
+    color: inherit;
+}
