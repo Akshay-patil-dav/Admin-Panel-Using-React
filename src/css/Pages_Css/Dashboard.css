@@ -1,3 +1,4 @@
+@import url("./DasboardStyle.css");
 .c-dashboardInfo {
     margin-bottom: 30px;
     
@@ -5,14 +6,23 @@
   }
   .c-dashboardInfo .wrap {
     background: #ffffff;
-    box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 7px;
+    /* box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.1); */
+    border: 2px solid #e6e6e6;
+    border-radius: 20px;
     text-align: center;
     position: relative;
     overflow: hidden;
     padding: 40px 25px 20px;
     height: 100%;
+    cursor: pointer;
   }
+
+  .c-dashboardInfo .wrap:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+  }
+
+
   .c-dashboardInfo__title,
   .c-dashboardInfo__subInfo {
     color: #6c6c6c;
@@ -73,7 +83,9 @@
     height: max-content;
   }
   .boxleft{
-    background-color: red;
-    width: 40%;
-    height: 200px;
+    /* background-color: red; */
+    width: 50%;
+    height: min-content;
+    position: relative;
+    left: 40px;
   }

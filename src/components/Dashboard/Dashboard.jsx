@@ -1,5 +1,6 @@
 import React from 'react'
 import { Card } from 'react-bootstrap';
+import CradSlide from './components/RecentActivityCard';
 
 
 export function CardsBox() {
@@ -49,8 +50,8 @@ export default function Dashboard() {
           {/* ***************** */}
           <div className='fx'>
             <Cards />
-            <div className='boxleft'>
-
+            <div className='boxleft mx-3'>
+                  <CradSlide />
             </div>
           </div>
           {/* ****************  */}
