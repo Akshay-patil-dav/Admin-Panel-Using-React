@@ -6,13 +6,15 @@
     font-family: 'Segoe UI', sans-serif;
     border: 2px solid #e5e7eb;
     /* max-width: 700px; */
-    width: 39%;
-    height: 40%;
+    width: 750px;
+    height: 500px;
     margin: auto;
-    position: absolute;
+    /* position: absolute;
     top: 1020px;
-    left: 1100px;
+    left: 1100px; */
     overflow-y: scroll;
+    position: relative;
+    left: 20px;
   }
   
   .tl-header {

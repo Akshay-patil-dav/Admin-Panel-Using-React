@@ -7,6 +7,10 @@ const ContactSourceCard = () => {
     { label: 'Direct', value: 40, color: '#0ea5e9' },
     { label: 'Social', value: 220, color: '#60a5fa' },
     { label: 'Referrals', value: 120, color: '#fca5a5' },
+
+    { label: 'Referrals', value: 120, color: '#fca5a5' },
+    { label: 'Referrals', value: 120, color: '#fca5a5' },
+    { label: 'Referrals', value: 120, color: '#fca5a5' },
     { label: 'Others', value: 35, color: '#facc15' },
   ];
 

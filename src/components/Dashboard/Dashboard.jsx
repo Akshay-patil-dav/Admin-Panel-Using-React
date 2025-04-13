@@ -64,8 +64,10 @@ export default function Dashboard() {
           </div>
           {/* ****************  */}
           <ProjectBalanceCard />
-          <ContactSourceCard />
-          <TransactionListCard />
+        <div className='cardbott' >
+        <ContactSourceCard />
+        <TransactionListCard />
+        </div>
         </div>
       </main>
     </div>

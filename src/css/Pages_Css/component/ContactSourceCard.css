@@ -1,16 +1,17 @@
 #contact-source-card.cs-card-container {
     background-color: #ffffff;
-    padding: 3em;
+    padding: 3.7em;
     border-radius: 16px;
     /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* max-width: 600px; */
-    width: 40%;
+    width: 760px;
     
     margin: auto;
-    position: absolute;
+
     border: 2px solid #e5e7eb;
-    top: 1020px;
+    
+    
   }
   
   .cs-title {

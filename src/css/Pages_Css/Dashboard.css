@@ -5,6 +5,13 @@
 @import url("./component/TransactionListCard.css");
 
 
+
+.cardbott{
+  display: flex;
+  position: absolute;
+  top: 1020px;
+}
+
 .c-dashboardInfo {
     margin-bottom: 30px;
     
