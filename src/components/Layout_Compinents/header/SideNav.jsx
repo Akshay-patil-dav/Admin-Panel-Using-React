@@ -40,11 +40,11 @@ const SideNav = ({ isOpen }) => {
             ]
         },
         {
-            id: 'documents',
+            id: 'Product',
             icon: BookOpen,
-            label: 'Documents',
+            label: 'Product',
             subItems: [
-                { id: 'notes', label: 'Notes', icon: FileText, link: '/documents/notes' },
+                { id: 'Add Product', label: 'Add Product', icon: FileText, link: '/Product' },
                 { id: 'lectures', label: 'Lectures', icon: Video, link: '/documents/lectures' },
                 { id: 'discussions', label: 'Discussions', icon: MessageSquare, link: '/documents/discussions' },
             ]

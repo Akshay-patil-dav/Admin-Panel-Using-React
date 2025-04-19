@@ -7,6 +7,7 @@ import Dashboard from './components/Dashboard/Dashboard';
 import Layout from './components/Layout_Compinents/Layout';
 import CRM from './components/Dashboard/CRM';
 import Footer from './components/Dashboard/Footer/Footer';
+import Add_Product from './components/Product/Add_Product';
 
 export default function App() {
 
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Dashboard />} />
           <Route path="/CRM" element={<CRM />} />
+          <Route path="/Product" element={<Add_Product />} />
           {/* <Footer /> */}
           
         </Route>
