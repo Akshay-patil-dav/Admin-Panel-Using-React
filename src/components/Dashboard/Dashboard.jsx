@@ -56,6 +56,8 @@ export default function Dashboard() {
           </div>
           {/* ***************** */}
           <div className='fx'>
+
+            
             <div>
               {/* <Cards /> */}
               <SmallSalesChartCard />

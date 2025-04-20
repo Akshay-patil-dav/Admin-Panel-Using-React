@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import {
     LayoutDashboard,
     BookOpen,
@@ -17,48 +17,53 @@ import {
     MessageSquare
 } from 'lucide-react';
 
+
+export function Menu_buttion() {
+    return (
+        <button id='dashboard' className="eduler-side-nav__item "
+            onClick={() => {toggleExpand('dashboard', '/')}}
+        >
+            <LayoutDashboard className="eduler-side-nav__item-icon" />
+            <span className="eduler-side-nav__item-content text-black" >Home</span>
+
+        </button>
+    )
+}
+
+
 const SideNav = ({ isOpen }) => {
     const [expandedItems, setExpandedItems] = useState([]);
+    const navigate = useNavigate();
 
-    const toggleExpand = (itemId) => {
+    const toggleExpand = (itemId, link) => {
         setExpandedItems((prev) =>
             prev.includes(itemId)
                 ? prev.filter((id) => id !== itemId)
                 : [...prev, itemId]
         );
+        if (link) {
+            navigate(link);
+        }
     };
 
     const navItems = [
+        // {
+        //     id: 'dashboard',
+        //     icon: LayoutDashboard,
+        //     label: 'Home',
+        //     link: '/',
+        // },
         {
-            id: 'dashboard',
-            icon: LayoutDashboard,
-            label: 'Dashboard',
-            subItems: [
-                { id: 'Home', label: 'Home', icon: FileText, link: '/' },
-                { id: 'CRM', label: 'CRM', icon: Video, link: '/CRM' },
-                // { id: 'discussions', label: 'Discussions', icon: MessageSquare, link: '/dashboard/discussions' },
-            ]
-        },
-        {
-            id: 'Product',
+            id: 'product',
             icon: BookOpen,
             label: 'Product',
-            subItems: [
-                { id: 'Add Product', label: 'Add Product', icon: FileText, link: '/Product' },
-                { id: 'lectures', label: 'Lectures', icon: Video, link: '/documents/lectures' },
-                { id: 'discussions', label: 'Discussions', icon: MessageSquare, link: '/documents/discussions' },
-            ]
+            link: '/Product',
         },
         { id: 'ai-writer', icon: PenTool, label: 'AI Writer', link: '/ai-writer' },
         {
             id: 'ai-teachers',
             icon: Users2,
             label: 'AI Teachers',
-            subItems: [
-                { id: 'math', label: 'Mathematics', icon: Users2, link: '/ai-teachers/math' },
-                { id: 'science', label: 'Science', icon: Users2, link: '/ai-teachers/science' },
-                { id: 'language', label: 'Language', icon: Users2, link: '/ai-teachers/language' },
-            ]
         },
         { id: 'analytics', icon: BarChart, label: 'Analytics', link: '/analytics' },
         { id: 'courses', icon: GraduationCap, label: 'Courses', link: '/courses' },
@@ -66,6 +71,7 @@ const SideNav = ({ isOpen }) => {
     ];
 
     const voiceTools = [
+
         { id: 'speech-to-text', icon: Mic, label: 'Speech to Text', link: '/voice-tools/speech-to-text' },
     ];
 
@@ -73,22 +79,41 @@ const SideNav = ({ isOpen }) => {
         <aside className={`eduler-side-nav ${isOpen ? 'eduler-side-nav--open' : ''}`}>
             <div className="eduler-side-nav__container">
                 <div className="eduler-side-nav__content">
+
+
+
+
+
                     <nav className="eduler-side-nav__menu">
+
+                        <div className="d-grid gap-3">
+
+                            <Menu_buttion />
+                            <h3 className="eduler-side-nav__section-title">
+                                AI Voice Tools
+                            </h3>
+
+                        </div>
+
                         {navItems.map((item) => (
                             <div key={item.id}>
+
+
                                 <button
-                                    onClick={() => toggleExpand(item.id)}
-                                    className="eduler-side-nav__item"
+                                    onClick={() => toggleExpand(item.id, item.link)}
+                                    id={item.id}
+                                    className="eduler-side-nav__item "
                                 >
                                     <item.icon className="eduler-side-nav__item-icon" />
-                                    <span className="eduler-side-nav__item-content">{item.label}</span>
+                                    <span className="eduler-side-nav__item-content text-black" >{item.label}</span>
                                     {item.subItems ? (
                                         <ChevronDown
                                             className={`eduler-side-nav__item-arrow ${expandedItems.includes(item.id) ? 'rotate-180' : ''
                                                 }`}
                                         />
                                     ) : (
-                                        <ChevronRight className="eduler-side-nav__item-arrow" />
+                                        <div className="eduler-side-nav__item-arrow" />
+                                        // ChevronRight className="eduler-side-nav__item-arrow" />
                                     )}
                                 </button>
                                 {item.subItems && (

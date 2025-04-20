@@ -318,6 +318,9 @@
 
 .eduler-side-nav__menu {
   margin-bottom: 8px;
+  display: grid;
+  grid-template-columns: repeat(0, 1fr);
+  gap: 3px;
 }
 
 .eduler-side-nav__item {
@@ -336,6 +339,11 @@
 }
 
 .eduler-side-nav__item:hover {
+  background-color: #f1f5f9;
+  color: #334155;
+}
+
+.action_nav{
   background-color: #f1f5f9;
   color: #334155;
 }

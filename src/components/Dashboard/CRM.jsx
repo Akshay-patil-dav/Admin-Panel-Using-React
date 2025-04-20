@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 // import { CardsBox } from './Dashboard'
 import CradSlide from './components/RecentActivityCard';
 import SmallSalesChartCard from './components/SmallSalesChartCard ';
@@ -8,7 +8,6 @@ import TransactionListCard from './components/TransactionListCard';
 
 export function CardsBox() {
     return (
-
         <div class="c-dashboardInfo col-lg-3 col-md-6">
             <div class="wrap">
                 <h4 class="heading heading5 hind-font medium-font-weight c-dashboardInfo__title">Portfolio Balance<svg
@@ -20,18 +19,14 @@ export function CardsBox() {
                 </svg></h4><span class="hind-font caption-12  c-dashboardInfo__count">€10,500</span>
             </div>
         </div>
-
     );
 }
-
 
 export function Cards() {
     return (
         <div id="cardsbox">
             <div class="container pt-5">
                 <div class="row align-items-stretch">
-
-
                     <CardsBox />
                     <CardsBox />
                     <CardsBox />
@@ -44,55 +39,50 @@ export function Cards() {
                     <CardsBox />
                     <CardsBox />
                     <CardsBox />
-
-
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default function CRM() {
+    useEffect(() => {
+        const dashboardElement = document.getElementById('dashboard');
+
+        if (dashboardElement) {
+            dashboardElement.classList.add('action_nav');
+            
+            document.getElementById('product').classList.remove('action_nav');
+        }
+    }, []);
+
     return (
         <div className="eduler-layout">
             <main className="eduler-main">
                 <div className="eduler-main__container">
-                    {/* lkejdl */}
                     <div className='fx'>
-                        <h4><b>Dashboard /</b></h4><h4><p className='mx-3'>CRM</p></h4>
+                        <h5><b>Dashboard /</b></h5><h5><p className='mx-3'>CRM</p></h5>
                     </div>
-                    {/* ***************** */}
                     <div className='fx'>
                         <div>
-                            {/* <Cards /> */}
-                            <SmallSalesChartCard />
                             <Cards />
+                            <SmallSalesChartCard />
                             <ContactSourceCard />
-
                         </div>
                         <div className='boxleft '>
-                            {/* <br /> */}
                             <CradSlide />
                             <br />
                             <ProjectBalanceCard />
                             <TransactionListCard />
-
                             <div className='mt-4 subscriptionCard'>
                                 <img className='subscription ' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg91nNJNLvZUlTCyGJ2pEoP0ZvVDXn2-c6uA&s" alt="" />
-                                <button type="button" class=" Subscriptionsbut">Subscriptions</button>
-                                <div className='subcr-card'>
-                                </div>
+                                <button type="button" class="Subscriptionsbut">Subscriptions</button>
+                                <div className='subcr-card'></div>
                             </div>
-                          
-
                         </div>
                     </div>
-                    {/* ****************  */}
-
-
                 </div>
             </main>
         </div>
-
-    )
+    );
 }

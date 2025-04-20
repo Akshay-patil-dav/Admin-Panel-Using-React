@@ -8,6 +8,7 @@ import Layout from './components/Layout_Compinents/Layout';
 import CRM from './components/Dashboard/CRM';
 import Footer from './components/Dashboard/Footer/Footer';
 import Add_Product from './components/Product/Add_Product';
+import Error404 from './components/EOORPAGE/Error404';
 
 export default function App() {
 
@@ -18,9 +19,10 @@ export default function App() {
       <BrowserRouter>
         <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Dashboard />} />
-          <Route path="/CRM" element={<CRM />} />
+          <Route index element={<CRM />} />
+          <Route path="/CRM" element={<Dashboard />} />
           <Route path="/Product" element={<Add_Product />} />
+          <Route path="*" element={<Error404 />} />
           {/* <Footer /> */}
           
         </Route>
