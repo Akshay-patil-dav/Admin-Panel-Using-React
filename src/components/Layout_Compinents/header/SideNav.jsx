@@ -18,17 +18,7 @@ import {
 } from 'lucide-react';
 
 
-export function Menu_buttion() {
-    return (
-        <button id='dashboard' className="eduler-side-nav__item "
-            onClick={() => {toggleExpand('dashboard', '/')}}
-        >
-            <LayoutDashboard className="eduler-side-nav__item-icon" />
-            <span className="eduler-side-nav__item-content text-black" >Home</span>
 
-        </button>
-    )
-}
 
 
 const SideNav = ({ isOpen }) => {
@@ -88,7 +78,13 @@ const SideNav = ({ isOpen }) => {
 
                         <div className="d-grid gap-3">
 
-                            <Menu_buttion />
+                            <button id='dashboard' className="eduler-side-nav__item "
+                                onClick={() => { toggleExpand('dashboard', '/') }}
+                            >
+                                <LayoutDashboard className="eduler-side-nav__item-icon" />
+                                <span className="eduler-side-nav__item-content text-black" >Home</span>
+
+                            </button>
                             <h3 className="eduler-side-nav__section-title">
                                 AI Voice Tools
                             </h3>
