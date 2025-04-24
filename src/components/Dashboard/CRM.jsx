@@ -58,11 +58,13 @@ export default function CRM() {
 
     return (
         <div className="eduler-layout">
+            
             <main className="eduler-main">
-                <div className="eduler-main__container">
-                    <div className='fx'>
+            <div className='fx'>
                         <h5><b>Dashboard /</b></h5><h5><p className='mx-3'>CRM</p></h5>
                     </div>
+                <div className="eduler-main__container">
+                   
                     <div className='fx'>
                         <div>
                             <Cards />

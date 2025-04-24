@@ -19,7 +19,7 @@
 }
 
 .c-dashboardInfo .wrap {
-  background: #ffffff;
+  /* background: #ffffff; */
   /* box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.1); */
   border: 2px solid #e6e6e6;
   border-radius: 20px;
@@ -29,6 +29,14 @@
   padding: 40px 25px 20px;
   height: 100%;
   cursor: pointer;
+
+  box-shadow: inset 0 0 10px #02020246;
+  /* From https://css.glass */
+  /* background: rgba(255, 255, 255, 1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px); */
 }
 
 /* .c-dashboardInfo .wrap:hover {
@@ -80,6 +88,38 @@
   background: linear-gradient(81.67deg, #ff647c 0%, #1f5dc5 100%);
 }
 
+.c-dashboardInfo:nth-child(5) .wrap:after {
+  background: linear-gradient(81.67deg, #ff647c 0%, #1f5dc5 100%);
+}
+
+.c-dashboardInfo:nth-child(6) .wrap:after {
+  background: linear-gradient(81.67deg, #7e1222 0%, #1f5dc5 100%);
+}
+
+.c-dashboardInfo:nth-child(7) .wrap:after {
+  background: linear-gradient(81.67deg, #ff647c 0%, #1f5dc5 100%);
+}
+
+.c-dashboardInfo:nth-child(8) .wrap:after {
+  background: linear-gradient(81.67deg, #64ffe5 0%, #1f5dc5 100%);
+}
+
+.c-dashboardInfo:nth-child(9) .wrap:after {
+  background: linear-gradient(81.67deg, #64ff8b 0%, #c51f1f 100%);
+}
+
+.c-dashboardInfo:nth-child(10) .wrap:after {
+  background: linear-gradient(81.67deg, #64b9ff 0%, #1fc52d 100%);
+}
+
+.c-dashboardInfo:nth-child(11) .wrap:after {
+  background: linear-gradient(81.67deg, #ff647c 0%, #54c51f 100%);
+}
+
+.c-dashboardInfo:nth-child(12) .wrap:after {
+  background: linear-gradient(81.67deg, #649aff 0%, #1f5dc5 100%);
+}
+
 .c-dashboardInfo__title svg {
   color: #d7d7d7;
   margin-left: 5px;
@@ -128,9 +168,9 @@
   /* left: 20px; */
   bottom: 18px;
   border-radius: 40px;
-  
 
-  
+
+
 
 }
 
@@ -154,7 +194,7 @@
 
 } */
 
-.subcr-card{
+.subcr-card {
 
 
   width: 100%;
@@ -167,13 +207,13 @@
 
 
   /* From https://css.glass */
-background: rgba(255, 255, 255, 0);
-/* border-radius: 16px; */
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(20px);
--webkit-backdrop-filter: blur(20px);
-padding: 40px;
-position: relative;
+  background: rgba(255, 255, 255, 0);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 40px;
+  position: relative;
   bottom: 480px;
   display: none;
 }
