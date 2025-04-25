@@ -1,7 +1,6 @@
 import { Outlet, Link } from "react-router-dom";
 import React, { useState } from 'react'
-import TopNav from "./header/TopNav";
-import SideNav from "./header/SideNav";
+import Sidebar from "./header/Sidebar";
 
 const Layout = () => {
 
@@ -13,9 +12,8 @@ const Layout = () => {
 
   return (
     <>
-      <TopNav toggleSidebar={toggleSidebar} />
-      <SideNav isOpen={isSidebarOpen} />
-
+      
+      <Sidebar />
       <Outlet />
     </>
   )
