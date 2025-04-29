@@ -1,9 +1,13 @@
+@import url("./Upgradebar.css");
+
 .sidebar {
     /* background-color: rgb(3, 2, 22); */
     background-color: white;
     width: 250px;
     height: 100vh;
     border-right: 2px solid rgb(199, 199, 199);
+
+    
 }
 
 .circal-slide {
@@ -27,12 +31,7 @@
 .blear-logout {
     /* From https://css.glass */
     /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.21);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 1);
+
 
     width: 90%;
     height: auto;
@@ -74,4 +73,36 @@
 .hed_logo_drop {
     position: relative;
     bottom: 7px;
+}
+
+
+
+.menu-butt{
+    width: 100%;
+    position: relative;
+    right: 20px;
+    text-align: left;
+    padding: 7px 12px;
+    border-radius: 10px;
+    border: 0px solid;
+    background-color: white;
+}
+
+.menu-butt:hover{
+    background-color: rgb(241, 241, 241);
+    color: rgb(65, 92, 247);
+    transition: all 0.3s ease-in-out;
+}
+
+.active{
+    background-color: rgb(241, 241, 241);
+    color: rgb(65, 92, 247);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.Parties{
+    position: relative;
+    right: 13px;
+    font-size: 14px;
 }
