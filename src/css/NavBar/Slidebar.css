@@ -2,13 +2,25 @@
 
 .sidebar {
     /* background-color: rgb(3, 2, 22); */
-    background-color: white;
+    /* background-color: white; */
     width: 250px;
     height: 100vh;
-    border-right: 2px solid rgb(199, 199, 199);
+    /* border-right: 2px solid rgb(199, 199, 199); */
+    font-size: 14px;
 
-    
+
+
+    /* From https://css.glass */
+    /* background: rgba(255, 255, 255, 1); */
+    /* border-radius: 16px; */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+
 }
+
+
 
 .circal-slide {
     background-color: red;
@@ -47,12 +59,14 @@
     color: black;
     font-size: 12px;
     font-weight: 600;
-    
+
     border-radius: 10px;
     border: 1px solid black;
     position: relative;
     left: 5px;
     bottom: 35px;
+
+
 
 }
 
@@ -63,11 +77,11 @@
 }
 
 .hed_logo_drop_p {
-   /* display: none; */
-   position: relative;
-   font-size: 12px;
-   bottom: 28px;
-   left: 52px;
+    /* display: none; */
+    position: relative;
+    font-size: 12px;
+    bottom: 28px;
+    left: 52px;
 }
 
 .hed_logo_drop {
@@ -76,8 +90,7 @@
 }
 
 
-
-.menu-butt{
+.search-butt {
     width: 100%;
     position: relative;
     right: 20px;
@@ -85,23 +98,48 @@
     padding: 7px 12px;
     border-radius: 10px;
     border: 0px solid;
-    background-color: white;
+    background-color: transparent;
 }
 
-.menu-butt:hover{
+.search-butt:hover {
+    color: rgb(65, 92, 247);
+}
+
+.menu-butt {
+    width: 100%;
+    position: relative;
+    right: 20px;
+    text-align: left;
+    padding: 7px 12px;
+    border-radius: 10px;
+    border: 0px solid;
+    background-color: transparent;
+}
+
+.menu-butt:hover {
     background-color: rgb(241, 241, 241);
     color: rgb(65, 92, 247);
     transition: all 0.3s ease-in-out;
+
+
+    box-shadow: 0 2px 0px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0.6px);
+    -webkit-backdrop-filter: blur(0.6px);
 }
 
-.active{
+.active {
     background-color: rgb(241, 241, 241);
     color: rgb(65, 92, 247);
     transition: all 0.3s ease-in-out;
+
+
+    box-shadow: 0 2px 0px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0.6px);
+    -webkit-backdrop-filter: blur(0.6px);
 }
 
 
-.Parties{
+.Parties {
     position: relative;
     right: 13px;
     font-size: 14px;
