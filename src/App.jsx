@@ -1,7 +1,7 @@
 import React from 'react'
 import LoginPage from './components/Login/LoginPage'
 import './App.css'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 // import Dashboard from './Components/Dashboard/Dashboard';
 // import Dashboard from './components/Dashboard/Dashboard';
 import Layout from './components/Layout_Compinents/Layout';
@@ -16,7 +16,7 @@ export default function App() {
     
    
       // <>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<CRM />} />
@@ -28,7 +28,7 @@ export default function App() {
         
         <Route path="login" element={<LoginPage />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
 
    
       // </>
