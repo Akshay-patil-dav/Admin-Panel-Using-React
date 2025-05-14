@@ -16,7 +16,7 @@ export default function App() {
     
    
       // <>
-      <HashRouter>
+      <BrowserRouter>
         <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<CRM />} />
@@ -28,7 +28,7 @@ export default function App() {
         
         <Route path="login" element={<LoginPage />} />
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
 
    
       // </>
