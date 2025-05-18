@@ -24,9 +24,31 @@
 
 
 .menu-drop-list {
-    overflow-y: scroll;
-    height: 450px;
+    /* overflow-y: scroll; */
+    height: max-content;
 }
+
+.menu-drop-list::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.menu-drop-list::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+.menu-drop-list::-webkit-scrollbar-thumb {
+  background: #032539; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.menu-drop-list::-webkit-scrollbar-thumb:hover {
+  background: #032539; 
+}
+
 
 .circal-slide {
     background-color: red;
