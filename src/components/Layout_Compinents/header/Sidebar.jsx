@@ -48,7 +48,7 @@ export default function Sidebar() {
 
           </li>
         </ul>
-        <ul className='mt-5 d-grid gap-1 menu-drop-list'>
+        <ul className='mt-5'>
 
 
           <li className='fx '>
@@ -59,6 +59,10 @@ export default function Sidebar() {
               <b className='mx-2 '>Search</b>
             </button>
           </li>
+
+        </ul>
+        <ul className=' d-grid gap-1 menu-drop-list'>
+
 
           <li className='fx mt-1 Parties'>
             Index
@@ -143,6 +147,32 @@ export default function Sidebar() {
             Material
           </li>
 
+          <li className='fx '>
+            <button className='menu-butt'>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-repeat" viewBox="0 0 16 16">
+                <path d="M11 5.466V4H5a4 4 0 0 0-3.584 5.777.5.5 0 1 1-.896.446A5 5 0 0 1 5 3h6V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192m3.81.086a.5.5 0 0 1 .67.225A5 5 0 0 1 11 13H5v1.466a.25.25 0 0 1-.41.192l-2.36-1.966a.25.25 0 0 1 0-.384l2.36-1.966a.25.25 0 0 1 .41.192V12h6a4 4 0 0 0 3.585-5.777.5.5 0 0 1 .225-.67Z" />
+              </svg>
+              <b className='mx-2 '>Return & Replace   </b>
+            </button>
+          </li>
+          <li className='fx '>
+            <button className='menu-butt'>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-repeat" viewBox="0 0 16 16">
+                <path d="M11 5.466V4H5a4 4 0 0 0-3.584 5.777.5.5 0 1 1-.896.446A5 5 0 0 1 5 3h6V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192m3.81.086a.5.5 0 0 1 .67.225A5 5 0 0 1 11 13H5v1.466a.25.25 0 0 1-.41.192l-2.36-1.966a.25.25 0 0 1 0-.384l2.36-1.966a.25.25 0 0 1 .41.192V12h6a4 4 0 0 0 3.585-5.777.5.5 0 0 1 .225-.67Z" />
+              </svg>
+              <b className='mx-2 '>Return & Replace   </b>
+            </button>
+          </li>
+
+          <li className='fx '>
+            <button className='menu-butt'>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-repeat" viewBox="0 0 16 16">
+                <path d="M11 5.466V4H5a4 4 0 0 0-3.584 5.777.5.5 0 1 1-.896.446A5 5 0 0 1 5 3h6V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192m3.81.086a.5.5 0 0 1 .67.225A5 5 0 0 1 11 13H5v1.466a.25.25 0 0 1-.41.192l-2.36-1.966a.25.25 0 0 1 0-.384l2.36-1.966a.25.25 0 0 1 .41.192V12h6a4 4 0 0 0 3.585-5.777.5.5 0 0 1 .225-.67Z" />
+              </svg>
+              <b className='mx-2 '>Return & Replace   </b>
+            </button>
+          </li>
+
         </ul>
 
       </div>
@@ -150,12 +180,12 @@ export default function Sidebar() {
       <div id='upgrade_aleart'>
         <div className='upgrade-aleart '>
 
-          <div className='container mt-3'>
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-exclamation-circle" viewBox="0 0 16 16">
+          <div className='container mt-3 fx'>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-exclamation-circle text-white" viewBox="0 0 16 16">
               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
               <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z" />
             </svg>
-            <b className='mx-2 '>Your Trial End Soon</b>
+            <h6><b className='mx-2 text-white '>Your Trial End Soon</b></h6>
           </div>
 
           <div className='container Upgrade-text mt-2 mx-2'>
