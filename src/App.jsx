@@ -6,11 +6,17 @@ import 'bootstrap/dist/js/bootstrap.min.js'
 import "./App.css"
 
 
+
+
 export default function App() {
+
+
+
+
+
   return (
     <div>
       <Layout />
-      
     </div>
   )
 }

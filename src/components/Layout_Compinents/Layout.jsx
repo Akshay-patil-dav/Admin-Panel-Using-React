@@ -12,8 +12,11 @@ const Layout = () => {
 
   return (
     <>
-      
-      <Sidebar />
+        
+      <div>
+        <Sidebar />
+        
+      </div>
       <Outlet />
     </>
   )
